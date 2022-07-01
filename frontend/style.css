@@ -161,6 +161,7 @@ body,
 
 .sharing-container p {
   text-align: center;
+  color: #ffffff;
 }
 
 .sharing-container .expire {
@@ -216,6 +217,7 @@ body,
 .email-container label {
   margin: 5px;
   font-size: 18px;
+  color: 10px;
 }
 
 .email-container input {
@@ -224,6 +226,8 @@ body,
   height: 19px;
   font-size: 18px;
   text-align: center;
+  color: #ffffff;
+  background: #2a2e2f;
 }
 
 .email-container input:focus {
@@ -244,7 +248,7 @@ body,
   background: var(--main-bg-color);
   border: none;
   border-radius: 5px;
-  color: #607d8b;
+  color: #ffffff;
   cursor: pointer;
 }
 
