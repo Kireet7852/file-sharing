@@ -37,7 +37,7 @@ dropZone.addEventListener("drop", (e) => {
     } else {
       showToast("Max file size is 100MB");
     }
-  } else if (files.length > 1) {
+  } else if (files.length > 5) {
     showToast("You can't upload multiple files");
   }
   dropZone.classList.remove("dragged");
