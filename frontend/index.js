@@ -15,7 +15,7 @@ const emailForm = document.querySelector("#emailForm");
 
 const toast = document.querySelector(".toast");
 
-const baseURL = "https://file-sshare-api.herokuapp.com/";
+const baseURL = "https://file-sshare-api.herokuapp.com";
 const uploadURL = `${baseURL}/api/files`;
 const emailURL = `${baseURL}/api/files/send`;
 
@@ -37,7 +37,7 @@ dropZone.addEventListener("drop", (e) => {
     } else {
       showToast("Max file size is 100MB");
     }
-  } else if (files.length > 5) {
+  } else if (files.length > 1) {
     showToast("You can't upload multiple files");
   }
   dropZone.classList.remove("dragged");
