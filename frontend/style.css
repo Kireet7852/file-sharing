@@ -101,6 +101,10 @@ body,
   color: #ffffff;
 }
 
+.filesize{
+  color: #75736f;
+}
+
 #browseBtn {
   color: #2196f3;
   cursor: pointer;
