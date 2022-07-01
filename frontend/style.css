@@ -122,6 +122,7 @@ body,
   z-index: 2;
   position: absolute;
   width: calc(100% - 30px);
+  color: #ffffff;
 }
 
 .progress-container .percent-container {
@@ -217,7 +218,7 @@ body,
 .email-container label {
   margin: 5px;
   font-size: 18px;
-  color: 10px;
+  color: #ffffff;
 }
 
 .email-container input {
