@@ -1,4 +1,4 @@
-# InShare - easy file sharing
+# File Sharing
 
 index.php and compose.json both file are for deployment on Heroku.
 
