@@ -30,8 +30,8 @@ const downloadBtn = document.querySelector("#downloadbtn");
 downloadBtn.addEventListener("click", e => {
     e.preventDefault();
     downloadBtn.innerText = "Downloading file...";
-    console.log(`https://file-sshare-api.herokuapp.com/files/download/${fileInputDownload.value}`)
-    fetchFile(`https://file-sshare-api.herokuapp.com/files/download/${fileInputDownload.value}`);
+    console.log(`https://file-sshare-api.herokuapp.com/download/${fileInputDownload.value}`)
+    fetchFile(`https://file-sshare-api.herokuapp.com/download/${fileInputDownload.value}`);
 });
 
 function fetchFile(url) {
@@ -40,7 +40,7 @@ function fetchFile(url) {
     e.preventDefault();
   }
   catch(e){
-    showToast(`Code does not exist`);
+    showToast(`start in shortly, if not than recheck the code`);
     fileInputDownload.value = "";
   }
 }
