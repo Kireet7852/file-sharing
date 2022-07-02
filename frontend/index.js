@@ -21,11 +21,12 @@ const emailURL = `${baseURL}/api/files/send`;
 
 const maxAllowedSize = 100 * 1024 * 1024; //100mb
 
-// https://file-sshare-api.herokuapp.com/files/download/a49e81
 const downloads = `${baseURL}/files/download/`;
 const fileInputDownload = document.querySelector("#downloadInput");
 const downloadBtn = document.querySelector("#downloadbtn");
 
+
+///receive download function
 downloadBtn.addEventListener("click", e => {
     e.preventDefault();
     downloadBtn.innerText = "Downloading file...";
