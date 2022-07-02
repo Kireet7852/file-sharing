@@ -35,8 +35,14 @@ downloadBtn.addEventListener("click", e => {
 });
 
 function fetchFile(url) {
-  window.location.assign(url, true)
-  e.preventDefault();
+  try{
+    window.location.assign(url, true)
+    e.preventDefault();
+  }
+  catch(e){
+    showToast(`Code does not exist`);
+    fileInputDownload.value = "";
+  }
 }
 
 
