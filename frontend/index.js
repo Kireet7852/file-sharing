@@ -21,6 +21,24 @@ const emailURL = `${baseURL}/api/files/send`;
 
 const maxAllowedSize = 100 * 1024 * 1024; //100mb
 
+// https://file-sshare-api.herokuapp.com/files/download/a49e81
+const downloads = `${baseURL}/files/download/`;
+const fileInputDownload = document.querySelector("#downloadInput");
+const downloadBtn = document.querySelector("#downloadbtn");
+
+downloadBtn.addEventListener("click", e => {
+    e.preventDefault();
+    downloadBtn.innerText = "Downloading file...";
+    console.log(`https://file-sshare-api.herokuapp.com/files/download/${fileInputDownload.value}`)
+    fetchFile(`https://file-sshare-api.herokuapp.com/files/download/${fileInputDownload.value}`);
+});
+
+function fetchFile(url) {
+  window.location.assign(url, true)
+  e.preventDefault();
+}
+
+
 
 browseBtn.addEventListener("click", () => {
   fileInput.click();
@@ -37,7 +55,7 @@ dropZone.addEventListener("drop", (e) => {
     } else {
       showToast("Max file size is 100MB");
     }
-  } else if (files.length > 1) {
+  } else if (files.length > 4) {
     showToast("You can't upload multiple files");
   }
   dropZone.classList.remove("dragged");
